@@ -14,21 +14,12 @@
         27 days = 2332800 seconds
 */
 #include <stdio.h>
-#include <locale.h>
 int main()
 {
-    char ID[10];
-    int Work_hrs = 0;
-    float Salary = 0;
-    printf("Please Enter your ID : ");
-    scanf("%s", ID);
-    printf("Please Enter your working(hrs) : ");
-    scanf("%d", &Work_hrs);
-    printf("Please Enter your Salary : ");
-    scanf("%f", &Salary);
-    setlocale(LC_NUMERIC, "");
-    printf("Expected Output:\n");
-    printf("Employees ID = %s\n", ID);
-    printf("Salary = U$ %'.2f", Salary * Work_hrs);
+    int day = 0, sec ;
+    printf("Please Enter Day : ");
+    scanf("%d", &day) ;
+    sec = day * 86400 ;
+    printf("%d days = %d seconds", day, sec ) ;
     return 0;
 }

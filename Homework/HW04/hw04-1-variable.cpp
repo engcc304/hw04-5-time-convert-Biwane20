@@ -9,4 +9,4 @@ int a = 10 ;
 float b = 20 ;
 char c[] = "Haha" ;
 char d = 'a' ;
-printf( "_ _ _ _", _, _, _, _) ; //TODO: #10 Display variable a, b, c and d.
+printf( "a b c d",a,b,c,d); //TODO: #10 Display variable a, b, c and d.
